@@ -1,0 +1,130 @@
+<div class="p-4">
+	<div ng-if="logomarca == 1">
+		<minha-foto url="https://s2.drogaraia.com.br/skin/frontend/drogaraia/default/images/media/logo.png" alt="Farmacia Online 24 Horas | Droga Raia"></minha-foto>
+	</div>
+	<div ng-if="logomarca == 2">
+		<minha-foto url="https://s2.drogasil.com.br/skin/frontend/drogasil/default/images/media/logo.png" alt="Farmacia online 24 horas Drogasil"></minha-foto>
+	</div>
+	<h3>Pedido Nº {{idPedido}}</h3>
+	<div><p>Última atualização: {{date | date:'dd/MM/yyyy HH:mm'}}</p></div>
+	<table class="table table-bordered track_tbl">
+		<thead>
+		    <tr>
+		        <th></th>
+		        <th>Status</th>
+		    </tr>
+		</thead>
+
+		<tbody ng-if="idStatus == 1">
+            <tr class="active">
+                <td class="track_dot">
+                    <span class="track_line"></span>
+                </td>
+                <td>{{status[0].texto}}</td>
+            </tr>                    
+		</tbody>
+
+		<tbody ng-if="idStatus == 2">
+            <tr class="active">
+                <td class="track_dot">
+                    <span class="track_line"></span>
+                </td>
+                <td>{{status[1].texto}}</td>
+            </tr>  
+            <tr>
+                <td class="track_dot">
+                    <span class="track_line"></span>
+                </td>
+                <td>{{status[0].texto}}</td>
+            </tr>                               
+		</tbody>
+
+
+		<tbody ng-if="idStatus == 3">
+            <tr class="active">
+                <td class="track_dot">
+                    <span class="track_line"></span>
+                </td>
+                <td>{{status[2].texto}}</td>
+            </tr> 
+            <tr>
+                <td class="track_dot">
+                    <span class="track_line"></span>
+                </td>
+                <td>{{status[1].texto}}</td>
+            </tr>  
+            <tr>
+                <td class="track_dot">
+                    <span class="track_line"></span>
+                </td>
+                <td>{{status[0].texto}}</td>
+            </tr>                               
+		</tbody>
+
+
+		<tbody ng-if="idStatus == 4">
+            <tr class="active">
+                <td class="track_dot">
+                    <span class="track_line"></span>
+                </td>
+                <td>{{status[3].texto}}</td>
+            </tr> 
+            <tr>
+                <td class="track_dot">
+                    <span class="track_line"></span>
+                </td>
+                <td>{{status[2].texto}}</td>
+            </tr> 
+            <tr>
+                <td class="track_dot">
+                    <span class="track_line"></span>
+                </td>
+                <td>{{status[1].texto}}</td>
+            </tr>            
+            <tr>
+                <td class="track_dot">
+                    <span class="track_line"></span>
+                </td>
+                <td>{{status[0].texto}}</td>
+            </tr>                               
+		</tbody>	
+
+		<tbody ng-if="idStatus == 5">
+            <tr class="active">
+                <td class="track_dot">
+                    <span class="track_line"></span>
+                </td>
+                <td>{{status[4].texto}}</td>
+            </tr> 
+            <tr>
+                <td class="track_dot">
+                    <span class="track_line"></span>
+                </td>
+                <td>{{status[3].texto}}</td>
+            </tr> 
+            <tr>
+                <td class="track_dot">
+                    <span class="track_line"></span>
+                </td>
+                <td>{{status[2].texto}}</td>
+            </tr>            
+            <tr>
+                <td class="track_dot">
+                    <span class="track_line"></span>
+                </td>
+                <td>{{status[1].texto}}</td>
+            </tr> 
+            <tr>
+                <td class="track_dot">
+                    <span class="track_line"></span>
+                </td>
+                <td>{{status[0].texto}}</td>
+            </tr>
+
+
+
+		</tbody>			
+
+
+	</table>
+</div>
