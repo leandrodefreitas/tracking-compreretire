@@ -17,7 +17,7 @@ api.listaStatus = function(req, res) {
             _id: 3, 
             texto: 'PEDIDO EM SEPARAÇÃO'
         }, 
-{
+        {
             _id: 4, 
             texto: 'PEDIDO PRONTO P/ RETIRADA'
         }, 
@@ -29,5 +29,17 @@ api.listaStatus = function(req, res) {
         
 };
 
+var jsonFile = require("jsonfile");
+var filename = './app/api/file.json';
+var jsonPedidos = {};
+
+api.busca = function(req, res) {
+    res.json(jsonPedidos);    
+};
+
+jsonFile.readFile(filename, function(err, jsonData){
+    if(err) throw err;
+    jsonPedidos = jsonData;
+});
 
 module.exports = api;
