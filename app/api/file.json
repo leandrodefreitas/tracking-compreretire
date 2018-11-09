@@ -6,5 +6,6 @@
 	{"idPedido": 5000, "cdStatus": 5, "logomarca" : 1},
 	{"idPedido": 6000, "cdStatus": 5, "logomarca" : 1},
 	
-	{"idPedido": 1568556330, "cdStatus": 1, "logomarca" : 1}
+	{"idPedido": 1568556330, "cdStatus": 1, "logomarca" : 3},
+	{"idPedido": 1618819876, "cdStatus": 1, "logomarca" : 3}
 ]
