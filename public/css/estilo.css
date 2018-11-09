@@ -13,7 +13,7 @@
     top: 9px;
     opacity: 0.5;
 }
-.track_tbl tr.active td.track_dot:after {
+.track_tbl tr.active-sucess td.track_dot:after {
     content: "\f111";
     font-family: FontAwesome;
     position: absolute;
@@ -22,7 +22,7 @@
     color: green;
 }
 
-.track_tbl tr.pre-active td.track_dot:after {
+.track_tbl tr.active-sucess td.track_dot:after {
     content: "\f111";
     font-family: FontAwesome;
     position: absolute;
@@ -31,8 +31,16 @@
     color: green;
 }
 
+.track_tbl tr.active-erro td.track_dot:after {
+    content: "\f111";
+    font-family: FontAwesome;
+    position: absolute;
+    margin-left: -5px;
+    top: 9px;
+    color: red;
+}
 
-.track_tbl tr.active td.track_status {
+.track_tbl tr.active-sucess td.track_status {
     font-weight: bold;
 }
 

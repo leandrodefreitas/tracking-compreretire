@@ -15,19 +15,29 @@
 		    </tr>
 		</thead>
 		<tbody ng-repeat="item in pedido">
-            <tr class="active" ng-if="idStatus == item._id" >
+            
+            <tr class="active active-erro" ng-if="idStatus == item._id && idStatus == 2" >
+                <td class="track_dot">
+                    <span class="track_line"></span>
+                </td>
+                <td class="track_status">{{item.texto}}</td>
+            </tr>
+
+            <tr class="active active-sucess" ng-if="idStatus == item._id && item._id != 2" >
                 <td class="track_dot">
                     <span class="track_line"></span>
                 </td>
                 <td class="track_status">{{item.texto}}</td>
             </tr> 
-            <tr ng-if="idStatus < item._id"">
+
+            <tr ng-if="idStatus < item._id && item._id != 2 && idStatus != 2">
                 <td class="track_dot">
                     <span class="track_line"></span>
                 </td>
                 <td>{{item.texto}}</td>
             </tr>
-            <tr class="pre-active" ng-if="idStatus > item._id">
+
+            <tr class="active-sucess" ng-if="idStatus > item._id && item._id != 2">
                 <td class="track_dot">
                     <span class="track_line"></span>
                 </td>

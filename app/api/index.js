@@ -9,20 +9,26 @@ api.listaStatus = function(req, res) {
             _id: 1, 
             texto : 'AGUARDANDO APROVAÇÃO DE CARTÃO'
         },
+
         {
             _id: 2, 
+            texto: 'PAGAMENTO NÃO EFETIVADO'
+        },
+
+        {
+            _id: 3, 
             texto: 'PAGAMENTO EFETUADO'
         },
         {
-            _id: 3, 
+            _id: 4, 
             texto: 'PEDIDO EM SEPARAÇÃO'
         }, 
         {
-            _id: 4, 
+            _id: 5, 
             texto: 'PEDIDO PRONTO P/ RETIRADA'
         }, 
         { 
-            _id: 5, 
+            _id: 6, 
             texto: 'PEDIDO RETIRADO',
         }
     ]);
