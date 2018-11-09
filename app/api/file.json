@@ -1,8 +1,4 @@
 [
-<<<<<<< HEAD
-	{"idPedido": 1000, "cdStatus": 2, "logomarca" : 1},
-=======
->>>>>>> 7af43b7f20279f49c7ef9336b8d01221d0c7c401
 	{"idPedido": 1568556330, "cdStatus": 3, "logomarca" : 1},
 	{"idPedido": 1618819876, "cdStatus": 3, "logomarca" : 1}
 ]
