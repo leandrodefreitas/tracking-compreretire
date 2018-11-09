@@ -10,23 +10,27 @@
     font-family: FontAwesome;
     position: absolute;
     margin-left: -5px;
-    top: 11px;
+    top: 9px;
+    opacity: 0.5;
 }
+.track_tbl tr.active td.track_dot:after {
+    color: green;
+}
+
+.track_tbl tr.pre-active td.track_dot:after {
+    color: red;
+}
+
+
+.track_tbl tr.active td.track_status {
+    font-weight: bold;
+}
+
 .track_tbl td.track_dot span.track_line {
-    background: #000;
     width: 3px;
     min-height: 50px;
     position: absolute;
     height: 101%;
-}
-.track_tbl tbody tr:first-child td.track_dot span.track_line {
-    top: 30px;
-    min-height: 25px;
-}
-.track_tbl tbody tr:last-child td.track_dot span.track_line {
-    top: 0;
-    min-height: 25px;
-    height: 10%;
 }
 
 minha-foto img{

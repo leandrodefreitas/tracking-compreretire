@@ -2,5 +2,6 @@
 	{"idPedido": 1000, "cdStatus": 1}, 
 	{"idPedido": 2000, "cdStatus": 2}, 
 	{"idPedido": 3000, "cdStatus": 3}, 
-	{"idPedido": 4000, "cdStatus": 4}
+	{"idPedido": 4000, "cdStatus": 4},
+	{"idPedido": 5000, "cdStatus": 5}
 ]
