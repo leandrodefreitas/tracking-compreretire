@@ -14,10 +14,20 @@
     opacity: 0.5;
 }
 .track_tbl tr.active td.track_dot:after {
+    content: "\f111";
+    font-family: FontAwesome;
+    position: absolute;
+    margin-left: -5px;
+    top: 9px;
     color: green;
 }
 
 .track_tbl tr.pre-active td.track_dot:after {
+    content: "\f111";
+    font-family: FontAwesome;
+    position: absolute;
+    margin-left: -5px;
+    top: 9px;
     color: red;
 }
 
