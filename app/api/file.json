@@ -1,7 +1,17 @@
 [
+<<<<<<< HEAD
 	{"idPedido": 1000, "cdStatus": 1, "logomarca" : 1}, 
 	{"idPedido": 2000, "cdStatus": 2, "logomarca" : 1}, 
 	{"idPedido": 3000, "cdStatus": 3, "logomarca" : 1}, 
 	{"idPedido": 4000, "cdStatus": 4, "logomarca" : 1},
 	{"idPedido": 5000, "cdStatus": 5, "logomarca" : 1}
 ]
+=======
+	{"idPedido": 1000, "cdStatus": 1}, 
+	{"idPedido": 2000, "cdStatus": 2}, 
+	{"idPedido": 3000, "cdStatus": 3}, 
+	{"idPedido": 4000, "cdStatus": 4},
+	{"idPedido": 5000, "cdStatus": 5},
+	{"idPedido": 6000, "cdStatus": 1}
+]
+>>>>>>> 3be64a4f26dc6c2096280fa37d998f19fe66cf7d
