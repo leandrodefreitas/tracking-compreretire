@@ -29,4 +29,4 @@ angular.module('minhasDiretivas', [])
         ddo.template = '<img class="img-responsive left-block" src="{{url}}" alt="{{titulo}}">';           
         
         return ddo;
-    })
+    });

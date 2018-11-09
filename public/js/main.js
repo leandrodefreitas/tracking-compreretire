@@ -3,12 +3,11 @@ angular.module('api-compreretire', ['minhasDiretivas','ngAnimate', 'ngRoute', 'n
 
 		$locationProvider.html5Mode(true);
 
-		$routeProvider.when('/status/:logomarca/:idPedido', {
+		$routeProvider.when('/pedido/:idPedido', {
 			templateUrl: 'partials/principal.html',
 			controller: 'StatusController'
 		});
 
-
-		$routeProvider.otherwise({redirectTo: '/status'});
+		$routeProvider.otherwise({redirectTo: '/pedido'});
 
 	});

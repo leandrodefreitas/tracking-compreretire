@@ -11,18 +11,17 @@ angular.module('api-compreretire')
 			console.log(erro);
 	});	
 
-	$http.get('/v1/status')
-		.success(function(status) {
-		$scope.status = status;
+	$http.get('/v1/pedido')
+		.success(function(pedido) {
+		$scope.pedido = pedido;
 		$scope.idPedido = {};
 		$scope.idStatus = {};
 		$scope.logomarca = {};
 		$scope.date = new Date();
 
-		if($routeParams.idPedido && $routeParams.logomarca) {
+		if($routeParams.idPedido) {
 			$scope.idPedido = $routeParams.idPedido;
-			$scope.idStatus = filtraStatusPedido($scope.idPedido);
-			$scope.logomarca = $routeParams.logomarca;
+			filtraStatusPedido($scope.idPedido);
 		}
 	})
 	.error(function(erro) {
@@ -33,7 +32,8 @@ angular.module('api-compreretire')
 		var pedido = $scope.statusPorPedido;
 	    for(var i = 0; i < pedido.length; i++){
             if(pedido[i].idPedido == parseInt(idPedido)){
-                return pedido[i].cdStatus;
+                $scope.idStatus = pedido[i].cdStatus;
+                $scope.logomarca = pedido[i].logomarca;
 	        }
 	    }
 	}
