@@ -21,13 +21,13 @@
                 </td>
                 <td class="track_status">{{item.texto}}</td>
             </tr> 
-            <tr ng-if="idStatus != item._id && idStatus + 1 != item._id"">
+            <tr ng-if="idStatus < item._id"">
                 <td class="track_dot">
                     <span class="track_line"></span>
                 </td>
                 <td>{{item.texto}}</td>
             </tr>
-            <tr class="pre-active" ng-if="idStatus + 1 == item._id">
+            <tr class="pre-active" ng-if="idStatus > item._id">
                 <td class="track_dot">
                     <span class="track_line"></span>
                 </td>
